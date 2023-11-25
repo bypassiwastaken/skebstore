@@ -18,10 +18,9 @@ input {
   display: table-cell;
   text-align: center;
   color: #FFF;
-font-size: 17px;
-display: inline-block;
-padding-left: 10px;
-padding-right: 10px;
+  font-size: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 button {
@@ -33,8 +32,12 @@ button {
   display: table-cell;
   text-align: center;
   color: #777;
-font-size: 17px;
-display: inline-block;
+  font-size: 17px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
 }
 
 p {

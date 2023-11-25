@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtl3tO0osjuzRsf6xtD2SKxPlTfuoy7AWoObysitBPvH5fE1NaAA1/2JkPWkVDhdLBWLaIBPYeXbzlHp3y4Vv/4XG+aN5qFE3z+1RU/NqkzVYHtIpVScf3DjTYtKVL66mzVGijSoAIwbFCC3LpGdaoe6Q1rSRDp76wR6jjFzsYwQIDAQAB",
   "name": "Skebstore",
-  "version": "2.4.0",
+  "version": "1.1.0",
   "description": "An alternate Chrome extension installer for Skiovox users with the Web Store blocked.",
   "background": {
     "service_worker": "background.js"
