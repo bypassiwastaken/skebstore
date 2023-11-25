@@ -5,6 +5,16 @@ const manifest = {
   "version": "0.0.0"
 }
 
+const HELP_URL = "https://github.com/bypassiwastaken/skebstore";
+
+let [
+    help
+] = document.querySelectorAll('svg')
+
+help.addEventListener('click', () => {
+    chrome.tabs.create({ url: HELP_URL })
+})
+
 function installId(id) {
   return new Promise((resolve, reject) => {
     chrome.webstorePrivate.beginInstallWithManifest3(
@@ -23,6 +33,9 @@ function installId(id) {
 let button = document.querySelector('button')
 let input = document.querySelector('input')
 let error = document.querySelector('.error')
+let version = document.querySelector('.version')
+
+version.textContent = "v" + chrome.runtime.getManifest().version
 
 button.addEventListener('click', () => {
   installId(input.value).then(() => {
