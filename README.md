@@ -1,6 +1,6 @@
-# skebstore
+# Skebstore
 
-A very primitive alternative extension installer for Skiovox users with the Web Store blocked.
+A alternative extension installer for Skiovox users with the Web Store blocked.
 Pull requests and improvements are appreciated.
 
 # Installation
