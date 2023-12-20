@@ -1,110 +1,61 @@
-* {
-  font-family: "Noto sans", sans-serif;
-  box-sizing: border-box;
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #282a36;
+    color: #f8f8f2;
 }
 
-body {
-  padding: 8px;
-  background: #212121;
-  color: #ffffff;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: #bd93f9;
 }
 
 input {
-  height: 40px;
-  border: 0px solid gray;
-  border-radius: 15px;
-  width: 325px;
-  background: #323232;
-  display: table-cell;
-  text-align: center;
-  color: #FFF;
-  font-size: 17px;
-  padding-left: 10px;
-  padding-right: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #44475a;
+    color: #f8f8f2;
+    border: 1px solid #6272a4;
+    border-radius: 10px;
 }
 
 button {
-  height: 40px;
-  border: 0px solid gray;
-  border-radius: 15px;
-  width: 80px;
-  background: #434343;
-  display: table-cell;
-  text-align: center;
-  color: #777;
-  font-size: 17px;
+    padding: 10px;
+    background-color: #bd93f9;
+    color: #282a36;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
-.input-area {
-  display: flex;
-  gap: 10px;
+button:hover {
+    background-color: #6272a4;
 }
 
 p {
-  color: #777;
-  font-size: 17px;
+    margin: 10px 0;
+    color: #6272a4;
 }
 
 .error {
-  color: #FF0000;
-  font-weight: bold;
+    color: #ff5555;
 }
 
-.top-left {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  padding: 20px;
+a {
+    color: #8be9fd; /* Light blue */
+    text-decoration: none;
 }
 
-.name {
-  font-size: 22px;
-}
-
-.version {
-  font: bold 14px monospace;
-}
-
-.top-right {
-  position: fixed;
-  top: 10px;
-  right: 0px;
-  padding: 5px 10px;
-  display: flex;
-  gap: 15px;
-}
-
-.center {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  align-items: center;
-}
-
-svg {
-  color: white;
-  filter: brightness(0) invert(1);
-  margin: 1px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  transition: transform 250ms;
-}
-
-svg:hover {
-  transform: scale(1.2);
-}
-
-#move {
-  cursor: move;
-}
-
-::placeholder {
-  color: #777;
+a:hover {
+    color: #bd93f9; /* Light purple on hover */
 }
